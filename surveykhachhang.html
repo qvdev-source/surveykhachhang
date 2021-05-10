@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    .bang {
+        table,tr;td {
+        border: 1px;
+                     }
+    }
+</style>
+<body>
+<form>
+    What is your range?<br>
+    <select name="age" style="width: 200px;">
+        <option value="18-24">18-24</option>
+        <option value="25-34">25-34</option>
+        <option value="35-50">35-50</option>
+        <option value="50+">50+</option>
+    </select><br>
+    What is your yearly income range?<br>
+    <select name="income" style="width: 200px;">
+        <option value="$0-$25000">$0-$25000</option>
+        <option value="$25001-$50000">$25001-$50000</option>
+        <option value="$50001-$100000">$50001-$100000</option>
+        <option value="$100000+">$100000+</option>
+    </select><br>
+    Gender Identity:<br>
+    <label><input type="radio" name="gender" value="Male" checked>Male</label><br>
+    <label><input type="radio" name="gender" value="Female">Female</label><br>
+    <label><input type="radio" name="gender" value="Nonbinary">Nonbinary</label><br>
+    <label><input type="radio" name="gender" value="Other">Other<input name="gender" type="text"></label><br>
+    Maximum of 250 characters.    Currently Used: 0 characters<br>
+    Which of the following products have your purchased in the last 2 months . Please check all that apply<br>
+    <label><input name="product" type="radio" value="product1" checked>Product 1</label><br>
+    <label><input name="product" type="radio" value="product2">Product 2</label><br>
+    <label><input name="product" type="radio" value="product3">Product 3</label><br>
+    How often would you use our new product?<br>
+    <label><input type="radio" name="time" value="daily" checked>Daily</label><br>
+    <label><input type="radio" name="time" value="weekly" checked>Weekly</label><br>
+    <label><input type="radio" name="time" value="Monthly" checked>Monthly</label><br>
+    What would you pay for the new product?<br>
+    $<input name="dollar" type="number">.<input name="cents" type="number"><br>
+    What features would you like to see in the new product?<br>
+    <textarea cols="50" rows="4"></textarea><br>
+    Please rate your level of agreement with the following statements.<br>
+    <table class="bang">
+        <tr>
+            <td></td>
+            <th>Strongly Disagree</th>
+            <th>Disagree</th>
+            <th>Agree</th>
+            <th>Strongly Agree</th>
+        </tr>
+        <tr>
+            <td>Our products are priced fairly</td>
+            <td><label><input name="giatri1" type="radio"  value="1" >1</label></td>
+            <td><label><input name="giatri1" type="radio"  value="2" >2</label></td>
+            <td><label><input name="giatri1" type="radio"  value="3" >3</label></td>
+            <td><label><input name="giatri1" type="radio"  value="4" >4</label></td>
+        </tr>
+        <tr>
+            <td>Our produt are high quality</td>
+            <td><label><input name="giatri2" type="radio"  value="1" >1</label></td>
+            <td><label><input name="giatri2" type="radio"  value="2" >2</label></td>
+            <td><label><input name="giatri2" type="radio"  value="3" >3</label></td>
+            <td><label><input name="giatri2" type="radio"  value="4" >4</label></td>
+        </tr>
+        <tr>
+            <td>You would recommened our product to a friend or coworker</td>
+            <td><label><input name="giatri3" type="radio"  value="1" >1</label></td>
+            <td><label><input name="giatri3" type="radio"  value="2" >2</label></td>
+            <td><label><input name="giatri3" type="radio"  value="3" >3</label></td>
+            <td><label><input name="giatri3" type="radio"  value="4" >4</label></td>
+        </tr>
+    </table>
+    <button>Submit</button>
+
+</form>
+</body>
+</html>
